@@ -55,7 +55,7 @@ require 'typhoeus'
 # The code below sets the bearer token from your environment variables
 # To set environment variables on Mac OS X, run the export command below from the terminal:
 # export BEARER_TOKEN='YOUR-TOKEN'
-bearer_token = "AAAAAAAAAAAAAAAAAAAAABQ2WgEAAAAA%2F4CLlg%2BblJ5TeQ0eIYp0YH9XQ%2F4%3Dc4TB9FV2Mseb1hVEZUUJctznrk8F0cnBGBoQvlFB9pXDCIbRLU"
+bearer_token = ENV[TWITTER_KEY]
 
 # Endpoint URL for the Recent Search API
 search_url = "https://api.twitter.com/2/tweets/search/recent"
